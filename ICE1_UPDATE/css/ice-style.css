@@ -1,0 +1,65 @@
+*{
+  margin: 1;
+}
+
+body{
+  background: #999999
+}
+
+#wrap{
+  background-color: #545649;
+  width: 80%;
+  margin: 0 auto;
+  position:absolute;
+}
+header h1{
+
+  background-color: yellow;
+  text-align: right;
+}
+
+nav{
+  background-color: green;
+}
+#content ul, nav ul{
+  list-style-type: none
+}
+
+nav a{
+  color: white;
+  display: inline;
+  margin-left: 20px;
+  text-decoration:
+}
+
+<aside>
+
+  background-color: white;
+
+
+
+  <form>
+
+  		Name:
+  		<input type="text" name="name" id = "name"></label><br>
+  		<label for="dob">DOB:</label>
+  		<input type="date" name="DOB" id = "dob"><br>
+
+
+  		Please enter your choice of snack:<br>
+  		<input type="radio" name="snack" value="pizza"> Pizza<br>
+    	<input type="radio" name="snack" value="donut"> Donut<br>
+    	<input type="radio" name="snack" value="vegan"> Vegan Stuff<br>
+  		<br>
+
+
+    		Please enter your choice of drink:<br>
+  		<input type="radio" name="snack" value="coffee"> Coffee<br>
+    		<input type="radio" name="snack" value="tea"> Tea<br>
+    		<input type="radio" name="snack" value="water"> Water<br>
+  		</div>
+  		<div>
+  				<input type = "submit" value = "Submit">
+  			</div>
+  		</form>
+  		<div>
