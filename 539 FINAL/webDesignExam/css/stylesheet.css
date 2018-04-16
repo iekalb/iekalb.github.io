@@ -1,0 +1,32 @@
+h1 {
+
+
+
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
+}
+
+.exam-pic {
+    border-image-source: url(examPic.jpg);
+    border-width: 5px;
+    border-color: blue;
+    padding: 5%;
+}
+
+.umsi-logo {
+    border-image-source: url(umsi-logo.jpg);
+    border-width: 5px;
+    border-color: blue;
+    padding: 5%;
+}
+
+img {
+   border:5px solid blue;
+}
