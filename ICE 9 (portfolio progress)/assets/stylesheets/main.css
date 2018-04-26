@@ -1,0 +1,239 @@
+/*-----GLOBAL------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+
+
+/* HTML5 display-role reset for older browsers
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*.grid {
+  display: grid;
+  border: 2px black solid;
+  width: 1170px;
+  height: 800px;
+  grid-template: repeat(12, 1fr) / repeat(3, 1fr)
+  grid-gap: 10px / 30px;
+
+}
+*/
+
+body {
+
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr 1fr;
+  grid-template-rows: 18em 1fr 1fr;
+  grid-template-areas: "header header header header"
+  "sidebar main main main" "footer footer footer footer";
+
+}
+
+header {
+  display: flex;
+}
+
+.header-title {
+  position: relative;
+  display: flex;
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 100px;
+  align-items: right;
+}
+
+.carrot {
+  display: flex;
+  background-size: contain;
+  width: 550px;
+  height: 250px;
+
+}
+
+.ostrich{
+
+  display: flex;
+  justify-content: start;
+  align-items: right;
+  background-size: contain;
+  width: 2400px;
+  height: 800px;
+}
+
+.main-nav {
+  font-family: 'Orienta', sans-serif;
+  font-size: 50px;
+  padding-left: 20px;
+  list-style-type: none;
+  text-decoration: none;
+
+}
+
+a {
+
+  color: #26A832;
+  text-decoration: none;
+}
+
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+
+}
+
+li a:hover {
+    color: #7ED321;
+    text-decoration: none;
+}
+
+li.selected a {
+    color: #7ED321;
+
+}
+
+
+
+main {
+
+  grid-area: main;
+
+}
+
+aside {
+
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
+}
+
+
+
+
+
+
+
+/*
+  ========================================
+  Typography
+  ========================================
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+}
+
+/*
+  ========================================
+  CONTACT
+  ========================================
+
+  /* Style inputs with type="text", select elements and textareas */
+.contact-form{
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 1
+      grid-row-end: 3
+      input[type=text], select, textarea {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  /* Style the submit button with a specific background color etc */
+      input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+
+  /* When moving the mouse over the submit button, add a darker green color */
+      input[type=submit]:hover {
+      background-color: #45a049;
+  }
+}
+
+  /* Add a background color and some padding around the form */
+/*   .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+  }
+*/
+
+@media screen and (min-width: 736px){
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "title title"
+    "header header"
+    "sidebar content"
+    "footer footer";
+  }
+
+
+}
